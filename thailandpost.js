@@ -65,12 +65,37 @@ thailandpost.RequestItems = (token, barcode) => {
     request(options, (error, response, body) => {
       if (error) return reject(error);
       try {
-        resolve(body.response.items);
+        resolve(body);
       } catch (e) {
         reject(e);
       }
     });
   });
 };
+
+thailandpost.Hooktrack = (token,barcode)=>{
+  const options = {
+    method: "POST",
+    url: "https://trackwebhook.thailandpost.co.th/post/api/v1/hook",
+    rejectUnauthorized: false,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Token " + token
+    },
+    body: { status: "all", language: "TH", barcode: barcode },
+    json: true
+  };
+  return new Promise((resolve, reject) => {
+    request(options, (error, response, body) => {
+      if (error) return reject(error);
+      try {
+        resolve(body.response.items);
+      } catch (e) {
+        reject(e);
+      }
+    });
+  });
+}
+
 
 module.exports = thailandpost;
