@@ -1,4 +1,4 @@
-﻿ThaiPost JS
+﻿ThaiPost Tracking API JS
 ==========
 
 ThaiPost Tracking API for JS
