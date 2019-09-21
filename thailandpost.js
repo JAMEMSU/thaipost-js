@@ -89,7 +89,7 @@ thailandpost.Hooktrack = (token,barcode)=>{
     request(options, (error, response, body) => {
       if (error) return reject(error);
       try {
-        resolve(body.response.items);
+        resolve(body);
       } catch (e) {
         reject(e);
       }
