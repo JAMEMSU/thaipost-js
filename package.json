@@ -1,0 +1,15 @@
+{
+  "name": "thaipost-js",
+  "version": "1.0.0",
+  "description": "ThaiPost API for JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sirichai Chulee",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
