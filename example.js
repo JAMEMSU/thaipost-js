@@ -2,8 +2,7 @@ const thailandpost = require("./thailandpost");
 
 (async () => {
   // สร้าง token ได้จากหน้า dashboard เมนูสำหรับนักพัฒนา https://track.thailandpost.co.th/dashboard#
-  const static_token =
-    "OcRSL-D?JyPeECO#K6WnQgE;S3U_V!E!ItH%WMXjECJ/D*ZfHLPvRlGeZ%I4TJGFZiOwIZOrC!ItK*K!V2N|OwFqXRPjLILeH.UF";
+  const static_token = "";
 
   // สำหรับ สร้าง Token เพื่อให้ในการรับส่งข้อมูล Token จะมีการกำหนดวันหมดอายุ 1 เดือน
   const token = await thailandpost.GetToken(static_token);
