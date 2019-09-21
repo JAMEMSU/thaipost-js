@@ -26,6 +26,12 @@ Examples
     "EF550456825TH",
     "TH425765204TH"
   ]);
+  
+  // ใช้ในการติดตามสถานะข้อมูล และเมื่อใดที่มีมีสถานะใหม่เกิดขึ้น ระบบจะทำการ Hook กลับไปให้ตาม URL ที่กำหนดผ่านหน้าเว็บ
+  const hook = await thailandpost.Hooktrack(token, [
+    "EF550456825TH",
+    "TH425765204TH"
+  ]);
 
   console.log(items);
 })();
