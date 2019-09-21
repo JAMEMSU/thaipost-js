@@ -65,7 +65,7 @@ thailandpost.RequestItems = (token, barcode) => {
     request(options, (error, response, body) => {
       if (error) return reject(error);
       try {
-        resolve(body);
+        resolve(body.response.items);
       } catch (e) {
         reject(e);
       }
