@@ -15,7 +15,7 @@ const thailandpost = require("./thailandpost");
   ]);
 
   // ใช้ในการ Get ข้อมูลจำนวน 100 หมายเลขขึ้นไป ข้อมูลจะถูกส่งไปยัง Email ในรูปแบบ Link File Download
-  const items = await thailandpost.RequestItems(token, [
+  const items_email = await thailandpost.RequestItems(token, [
     "EF550456825TH",
     "TH425765204TH"
   ]);
