@@ -34,7 +34,6 @@ const thailandpost = require("./thailandpost");
     "TH425765204TH"
   ]);
 
-  console.log(items);
 })();
 
 
