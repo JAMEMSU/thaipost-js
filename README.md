@@ -7,6 +7,7 @@ ThaiPost Tracking API for JS
 Examples
 --------
 ```javascript
+const thailandpost = require("./thailandpost");
 
 (async () => {
   // สร้าง token ได้จากหน้า dashboard เมนูสำหรับนักพัฒนา https://track.thailandpost.co.th/dashboard#
